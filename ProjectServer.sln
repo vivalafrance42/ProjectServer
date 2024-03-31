@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectServer", "ProjectServer\ProjectServer.csproj", "{129F29B7-CDDC-43CF-85EA-3D9D021D6848}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8228E4CA-788E-4106-B7CB-C706D6038D4D} = {8228E4CA-788E-4106-B7CB-C706D6038D4D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodModel", "FoodModel\FoodModel.csproj", "{8228E4CA-788E-4106-B7CB-C706D6038D4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{129F29B7-CDDC-43CF-85EA-3D9D021D6848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{129F29B7-CDDC-43CF-85EA-3D9D021D6848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{129F29B7-CDDC-43CF-85EA-3D9D021D6848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{129F29B7-CDDC-43CF-85EA-3D9D021D6848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8228E4CA-788E-4106-B7CB-C706D6038D4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8228E4CA-788E-4106-B7CB-C706D6038D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8228E4CA-788E-4106-B7CB-C706D6038D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8228E4CA-788E-4106-B7CB-C706D6038D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F25E2E2C-C52E-4E29-8811-2146AD00E505}
+	EndGlobalSection
+EndGlobal
