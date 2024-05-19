@@ -1,0 +1,28 @@
+MenuItem,FoodPlace,ItemsPurchased,Price,PlaceInitials2,Id
+Big Mac,McDonald’s,100,6.08,MD,1
+McChicken,McDonald’s,300,4.08,MD,2
+Quarter Pounder,McDonald’s,100,5.08,MD,3
+Crunchy Taco,Taco Bell,40,2.59,TB,4
+Soft Taco,Taco Bell,30,2.09,TB,5
+Crunchwrap Supreme,Taco Bell,10,6.08,TB,6
+Dave’s Single,Wendy’s,50,5.09,WD,7
+Spicy Chicken Sandwich,Wendy’s,40,5.59,WD,8
+Frosty,Wendy’s,20,2.59,WD,9
+Whopper,Burger King,75,6.08,BK,10
+Whopper Jr.,Burger King,50,4.08,BK,11
+Original Chicken Sandwich,Burger King,25,5.59,BK,12
+Jumbo Jack,Jack in the Box,60,4.09,JB,13
+Sourdough Jack,Jack in the Box,45,5.59,JB,14
+Curly Fries,Jack in the Box,20,3.08,JB,15
+Famous Star,Carl's Jr.,50,5.09,CJ,16
+Super Star,Carl's Jr.,20,7.09,CJ,17
+Western Bacon Cheeseburger,Carl's Jr.,40,7.09,CJ,18
+Hot Dog,Wienerschnitzel,200,2.59,WS,19
+Corn Dog,Wienerschnitzel,150,3.59,WS,20
+Chili Dog,Wienerschnitzel,100,4.08,WS,21
+Classic Tostada Salad,El Pollo Loco,45,8.09,PL,22
+Original Pollo Bowl,El Pollo Loco,35,6.08,PL,23
+Classic Chicken Burrito,El Pollo Loco,15,5.09,PL,24
+Orange Chicken,Panda Express,55,4.59,PE,25
+Chow Mein,Panda Express,35,2.59,PE,26
+Beijing Beef,Panda Express,25,3.59,PE,27

@@ -4,6 +4,7 @@ using FoodModel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FoodModel.Migrations
 {
     [DbContext(typeof(FoodSourceContext))]
-    partial class FoodSourceContextModelSnapshot : ModelSnapshot
+    [Migration("20240422040128_identity")]
+    partial class identity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -29,13 +32,6 @@ namespace FoodModel.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FoodPlaceId"));
-
-                    b.Property<string>("PlaceInitials2")
-                        .IsRequired()
-                        .HasMaxLength(2)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(2)")
-                        .HasColumnName("PlaceInitials2");
 
                     b.Property<string>("PlaceName")
                         .IsRequired()
@@ -130,10 +126,6 @@ namespace FoodModel.Migrations
 
                     b.Property<int>("ItemsPurchased")
                         .HasColumnType("int");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric(18, 2)")
-                        .HasColumnName("Price");
 
                     b.HasKey("MenuItemId")
                         .HasName("PK__MenuItem__8943F7227526083B");

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 // using Microsoft.Extensions.Options;
 
 namespace FoodModel;
 
-public partial class FoodSourceContext : DbContext
+public partial class FoodSourceContext : IdentityDbContext<FoodPlaceMenuItemsUser>
 {
     public FoodSourceContext()
     {
@@ -23,10 +24,10 @@ public partial class FoodSourceContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //if (optionsBuilder.IsConfigured)
-        //{
-        //    return;
-       //}
+        if (optionsBuilder.IsConfigured)
+        {
+            return;
+        }
 
         IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
         var config = builder.Build();
@@ -35,6 +36,7 @@ public partial class FoodSourceContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<MenuItem>(entity =>
         {
             entity.HasKey(e => e.MenuItemId).HasName("PK__MenuItem__8943F7227526083B");

@@ -19,6 +19,9 @@ public partial class MenuItem
 
     public int ItemsPurchased { get; set; }
 
+    [Column("Price", TypeName = "numeric(18, 2)")]
+    public decimal Price { get; set; }
+
     [ForeignKey("FoodPlaceId")]
     [InverseProperty("MenuItems")]
     public virtual FoodPlace FoodPlace { get; set; } = null!;
